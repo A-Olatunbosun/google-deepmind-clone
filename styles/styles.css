@@ -588,13 +588,16 @@ button.section2_nav_btn {
   padding: 0.5rem 0.8rem;
   border-radius: 50px;
   margin: 0.3rem 0.3rem;
+  cursor: not-allowed;
 }
+
 .section2_nav_right {
   width: 50%;
   background-color: hsl(0, 0%, 29%);
   padding: 0.5rem 0.8rem;
   border-radius: 50px;
   margin: 0.3rem 0.3rem;
+  cursor: pointer;
 }
 
 /* Section2 Ends  */
@@ -636,6 +639,7 @@ button.section2_nav_btn {
   align-items: start;
   gap: var(--gap-md);
 }
+
 .research_side_link:hover .learn_more {
   background-color: var(--input-color-hover-2);
   gap: var(--gap-sm);
@@ -903,6 +907,10 @@ button.section2_nav_btn {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav {
+    padding-inline: 3rem;
+  }
+
   .hero_section,
   .section2,
   .section3,
@@ -928,10 +936,6 @@ button.section2_nav_btn {
     grid-template-columns:
       minmax(5px, 1.5fr)
       minmax(5px, 1fr);
-    padding: var(--main-padding) 1rem;
-  }
-
-  .nav {
     padding: var(--main-padding) 1rem;
   }
 
@@ -1025,7 +1029,7 @@ button.section2_nav_btn {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .left_nav {
@@ -1305,7 +1309,8 @@ button.section2_nav_btn {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
+    padding-inline: 1rem;
     border-bottom: 1px solid var(--border-color);
   }
 
@@ -1389,6 +1394,7 @@ button.section2_nav_btn {
     width: fit-content;
     height: auto;
   }
+
   .try_it p {
     text-transform: uppercase;
     font-size: var(--font-size-xs);
@@ -1459,7 +1465,8 @@ button.section2_nav_btn {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
+    padding-inline: 1rem;
     border-bottom: 1px solid var(--border-color);
   }
 
@@ -1556,7 +1563,8 @@ button.section2_nav_btn {
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
+    padding-inline: 1rem;
     gap: 3rem;
     border-bottom: 1px solid var(--border-color);
   }
@@ -1686,11 +1694,12 @@ button.section2_nav_btn {
   .google {
     width: 100%;
     height: auto;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
+    padding-inline: 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: start;
     gap: 0.5rem;
   }
 
@@ -1704,9 +1713,9 @@ button.section2_nav_btn {
     width: fit-content;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: start;
     gap: 0.5rem;
   }
 
